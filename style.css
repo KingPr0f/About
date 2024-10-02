@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.5;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
+    background-color: #fff;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+img,
+video {
+    max-width: 100%;
+    height: auto;
+    display:block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+button,
+input,
+select,
+textarea {
+    font-family: inherit;
+    font-size: inherit;
+    border: none;
+    background: none;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+.header {
+    padding: 20px 0;
+}
+
+.header__logo {
+    width: 145px;
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 73px;
+}
+
+.header__navigation {
+    display: flex;
+    align-items: center;
+    width:60%;
+    justify-content: space-between;
+    gap:12px;
+    
+}
+
+.header__navigation-list {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+    
+}
+
+.header__buttons {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width:40%;
+    gap: 70px;
+}
+.header__buttons-list {
+    display: flex;
+    align-items: center;
+    
+    gap: 17px;
+}
+
+.header__navigation-item {
+    padding: 8px 12px 8px 12px;
+}
+
+.header__navigation-item_active {
+    color: rgb(198, 155, 123);
+    border-bottom: 1px solid rgb(198, 155, 123);
+}
+
+.search {
+    /* Стили для формы поиска */
+    display: inline-block; /* чтобы форма была inline-блоком */
+    position: relative; /* для позиционирования иконки поиска */
+    width: 200px; /* ширина формы поиска */
+    margin: 1px; /* отступы вокруг формы */
+    padding: 1px; /* внутренние отступы формы */
+    border: 1px solid #ccc; /* рамка вокруг формы */
+    border-radius: 5px; /* скругленные углы */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* тень под формой */
+  }
+  
+  .search__input {
+    /* Стили для поля ввода */
+    width: 100%; /* ширина поля ввода */
+    height: 10px; /* высота поля ввода */
+    padding: 9px; /* внутренние отступы поля ввода */
+    font-size: 16px; /* размер шрифта */
+    border: none; /* без рамки */
+    border-radius: 5px; /* скругленные углы */
+    background-color: #fff; /* белый фон */
+    color: #333; /* темный текст */
+  }
+  
+  .search__input::placeholder {
+    /* Стили для плейсхолдера */
+    color: #999; /* серый текст */
+  }
+  
+  .search__input:focus {
+    /* Стили для поля ввода при фокусе */
+    border-color: #337ab7; /* синяя рамка */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* тень под полем ввода */
+  }
+  
+  .header__search {
+    /* Стили для контейнера формы поиска в шапке */
+    float: right; /* чтобы форма была справа */
+    margin-right: 20px; /* отступ справа */
+  }

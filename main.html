@@ -5,13 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header class="header">
         <div class="container header__container">
-            <img class="logo header__logo">
             <nav class="header__navigation">
+                <img src="logo.png"  class="logo header__logo">
                 <ul class="header__navigation-list">
                     <li class="header__navigation-item">
                         <a class="header__navigation-link">Home</a>
@@ -19,7 +20,7 @@
                     <li class="header__navigation-item">
                         <a class="header__navigation-link">Shop</a>
                     </li>
-                    <li class="header__navigation-item">
+                    <li class="header__navigation-item header__navigation-item_active">
                         <a class="header__navigation-link">About</a>
                     </li>
                     <li class="header__navigation-item">
@@ -27,17 +28,17 @@
                     </li>
                 </ul>
             </nav>
-            <form class="search header__search">
-                <input class="search__input" type="search" placeholder="Search...">
-                <button class="search__button">Search</button>
-            </form>
+            
             <nav class="header__buttons">
-                <ul class="header__navigation-list">
-                    <li class="header__navigation-item"><a class="header__navigation-link"><img></a>
+                <form class="search header__search">
+                    <input class="search__input" type="search" placeholder="Search...">              
+                </form>
+                <ul class="header__buttons-list">
+                    <li class="header__buttons-button"><a class="header__navigation-link"><img src="Line Rounded_Heart.png"></a>
                     </li>
-                    <li class="header__navigation-item"><a class="header__navigation-link"><img></a>
+                    <li class="header__buttons-button"><a class="header__navigation-link"><img src="Line Rounded_Shopping cart.png"></a>
                     </li>
-                    <li class="header__navigation-item"><a class="header__navigation-link"><img></a>
+                    <li class="header__buttons-button"><a class="header__navigation-link"><img src="Line Rounded_User.png"></a>
                     </li>
                 </ul>
             </nav>
