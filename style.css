@@ -12,10 +12,11 @@
 
 body {
     line-height: 1.5;
-    font-family: Arial, sans-serif;
+    font-family: Gilroy;
     font-size: 16px;
-    color: #333;
-    background-color: #fff;
+    color: rgb(58, 56, 69);
+    background-color: rgb(247, 246, 245);
+    min-height: 100vh;
 }
 
 ul,
@@ -50,6 +51,19 @@ textarea {
     background: none;
 }
 
+@font-face {
+    font-weight: 400; 
+    font-family: Gilroy;
+    src: url("fonts/Gilroy-Regular.woff2");
+  }
+
+  @font-face {
+    font-weight: 600; 
+    font-family: Gilroy;
+    src: url("fonts/Gilroy-Bold.woff2");
+  }
+
+
 .container {
     max-width: 1200px;
     width: 100%;
@@ -57,8 +71,15 @@ textarea {
     padding: 0 16px;
 }
 
+.main {
+    background-color: rgb(247, 246, 245);
+}
+
 .header {
-    padding: 20px 0;
+    padding: 16px 0;
+    border-bottom: 1px solid rgb(202, 201, 207);
+    background-color: white;
+
 }
 
 .header__logo {
@@ -69,7 +90,24 @@ textarea {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 73px;
+    column-gap: 73px;
+}
+
+.banner__header-title {
+font-size: 56px;
+font-weight: 600;
+line-height: 69px;
+letter-spacing: 0%;
+text-align: center;
+text-transform: uppercase;
+}
+
+.banner__header-description {
+    font-size: 16px;
+font-weight: 400;
+line-height: 150%;
+letter-spacing: 0%;
+text-align: center;
 }
 
 .header__navigation {
@@ -151,3 +189,561 @@ textarea {
     float: right; /* чтобы форма была справа */
     margin-right: 20px; /* отступ справа */
   }
+
+  .banner {
+    margin-top: 50px;
+    margin-bottom: 100px;
+  }
+
+  .banner__container {
+    display: flex;
+    flex-direction: column;
+    column-gap: 100px;
+  }
+
+  .banner__header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+
+  .banner__header-description {
+    color: rgb(89, 86, 103);
+font-family: Gilroy;
+font-size: 16px;
+font-weight: 400;
+line-height: 150%;
+letter-spacing: 0%;
+text-align: center;
+  }
+
+  .banner__header-title {
+    color: rgb(58, 56, 69);
+font-family: Gilroy;
+font-size: 56px;
+font-weight: 600;
+line-height: 69px;
+letter-spacing: 0%;
+text-align: center;
+text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+
+  .cards {
+    display: flex;
+  }
+  .banner__cards-left {
+    margin-right: 20px;
+    background-color: #fff;
+  }
+.card__left {
+    display: flex;
+    flex-direction: column;
+}
+.card__description-left {
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.card_description-right {
+    margin-left: 40px;
+    margin-top: 40px;
+    margin-right: 20px;
+}
+
+.card__title {
+    margin-bottom: 14px;
+    font-size: 40px;
+font-weight: 600;
+line-height: 49px;
+letter-spacing: 0%;
+text-align: left;
+text-transform: uppercase;
+}
+
+
+.card-right-one {
+    display: flex;
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+
+.card-right-two {
+    display: flex;
+    background-color: #fff;
+}
+
+.card__description {
+    color: rgb(89, 86, 103);
+font-family: Gilroy;
+font-size: 16px;
+font-weight: 400;
+line-height: 150%;
+letter-spacing: 0%;
+text-align: left;
+}
+
+
+.cards {
+   display: flex;
+}
+
+.work__container {
+    display: flex;
+}
+
+.work {
+    margin-bottom: 100px;
+}
+
+.work__image {
+    margin-right: 20px;
+}
+
+.work__text {
+display: flex;
+flex-direction: column;
+}
+
+.how-we-work {
+    font-size: 40px;
+font-weight: 600;
+line-height: 49px;
+letter-spacing: 0%;
+text-align: left;
+text-transform: uppercase;
+margin-bottom: 40px;
+margin-top: 20px;
+}
+
+.work-title {
+    font-size: 20px;
+font-weight: 600;
+line-height: 25px;
+letter-spacing: 0%;
+text-align: left;
+margin-bottom: 8px;
+}
+
+.work-info {
+    color: rgb(89, 86, 103);
+    font-size: 16px;
+font-weight: 400;
+line-height: 150%;
+letter-spacing: 0%;
+text-align: left;
+margin-bottom: 16px;
+}
+
+.team__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.team {
+    margin-bottom: 100px;
+}
+
+.work__title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.meet {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 49px;
+    letter-spacing: 0%;
+    text-align: left;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.team__list {
+    display: flex;
+    gap: 20px;
+}
+
+.person-info {
+    display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: center;
+gap: 8;
+padding: 0px;
+margin-top: 16px;
+}
+
+.person-name {
+    font-size: 20px;
+font-weight: 600;
+line-height: 25px;
+letter-spacing: 0%;
+text-align: center;
+margin-bottom: 8px;
+}
+
+.person-position {
+    color: rgb(89, 86, 103);
+    font-size: 16px;
+font-weight: 500;
+line-height: 19px;
+letter-spacing: 0%;
+text-align: center;
+}
+
+.signup {
+    margin-bottom: 100px;
+}
+
+.signup__container {
+    padding: 40px 100px;
+    background-color: #fff;
+}
+
+.signup__info {
+display: flex;
+flex-direction: column;
+gap: 16px;
+margin-bottom: 40px;
+}
+
+.signup-title {
+    color: rgb(89, 86, 103);
+font-family: Gilroy;
+font-size: 24px;
+font-weight: 600;
+line-height: 29px;
+letter-spacing: 0%;
+text-align: center;
+}
+
+.signup-description {
+    color: rgb(58, 56, 69);
+font-family: Gilroy;
+font-size: 40px;
+font-weight: 600;
+line-height: 49px;
+letter-spacing: 0%;
+text-align: center;
+text-transform: uppercase;
+}
+
+.signup__form {
+    display: flex;
+    justify-content: center;
+}
+
+.form__input {
+    box-sizing: border-box;
+/* Neutral 600 */
+border: 1px solid rgb(128, 127, 134);
+border-radius: 4px;
+/* Input */
+position: static;
+width: 386px;
+height: 51px;
+/* Автолейаут */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+gap: 10;
+padding: 16px 0px 16px 0px;
+
+
+/* Inside Auto Layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+margin: 0px 21px;
+
+/* Med */
+color: rgb(89, 86, 103);
+font-family: Gilroy;
+font-size: 16px;
+font-weight: 500;
+line-height: 19px;
+letter-spacing: 0%;
+text-align: center;
+}
+
+.form__button {
+    border-radius: 4px;
+/* warm black */
+background: rgb(58, 56, 69);
+position: static;
+width: 183px;
+height: 48px;
+/* Автолейаут */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+gap: 8;
+padding: 13px 0px 13px 0px;
+flex: none;
+order: 1;
+flex-grow: 0;
+margin: 0px 21px;
+color: rgb(255, 255, 255);
+font-family: Gilroy;
+font-size: 16px;
+font-weight: 600;
+line-height: 20px;
+letter-spacing: 0%;
+text-align: left;
+}
+
+.footer {
+    /* warm black */
+background: rgb(58, 56, 69);
+padding: 40px 120px;
+}
+
+.footer__top {
+display: flex;
+gap: 200px;
+}
+
+.footer__links {
+    display: flex;
+    gap: 100px;
+}
+
+.footer__info {
+display: flex;
+flex-direction: column;
+gap: 40px;
+}
+
+.interface {
+    position: static;
+width: 303.45px;
+height: 120px;
+/* Автолейаут */
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: flex-start;
+gap: 14px;
+padding: 0px;
+
+/* Inside Auto Layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+
+.footer__info-description {
+    /* Text Reg */
+color: rgb(202, 201, 207);
+font-family: Gilroy;
+font-size: 16px;
+font-weight: 400;
+line-height: 150%;
+letter-spacing: 0%;
+text-align: left;
+margin-bottom: 24px;
+}
+
+.footer__info-button {
+    position: static;
+width: 240px;
+height: 48px;
+/* Автолейаут */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+gap: 8;
+padding: 13px 0px 13px 0px;
+
+    box-sizing: border-box;
+/* White */
+border: 1px solid rgb(255, 255, 255);
+border-radius: 4px;
+    color: rgb(255, 255, 255);
+font-family: Gilroy;
+font-size: 16px;
+font-weight: 600;
+line-height: 20px;
+letter-spacing: 0%;
+text-align: left;
+}
+
+.footer-title-navigation {
+    color: rgb(255, 255, 255);
+font-family: Gilroy;
+font-size: 20px;
+font-weight: 500;
+line-height: 24px;
+letter-spacing: 0%;
+text-align: left;
+}
+
+.footer__navigation-link {
+    color: rgb(202, 201, 207);
+font-family: Gilroy;
+font-size: 16px;
+font-weight: 500;
+line-height: 19px;
+letter-spacing: 0%;
+text-align: center;
+}
+
+.footer__navigation-link-bottom {
+    color: rgb(166, 166, 168);
+font-family: Gilroy;
+font-size: 16px;
+font-weight: 500;
+line-height: 19px;
+letter-spacing: 0%;
+text-align: center;
+}
+
+.footer__links-about {
+    display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: flex-start;
+padding: 0px;
+gap: 24px;
+}
+
+.footer__links-services {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+}
+
+.footer__links-portfolio {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+}
+
+.footer__navigation-list {
+    display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: flex-start;
+gap: 12px;
+padding: 0px;
+}
+
+.footer__bottom {
+    box-sizing: border-box;
+/* Neutral 700 */
+border-top: 1px solid rgb(89, 86, 103);
+margin-top: 40px;
+}
+
+.footer__navigation-list-bottom {
+    padding-top: 24px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.footer__navigation-list-bottom li {
+    position: relative;
+    padding-right: 10px;
+  }
+
+  .footer__navigation-link-bottom {
+    color: rgb(166, 166, 168);
+font-family: Gilroy;
+font-size: 16px;
+font-weight: 500;
+line-height: 19px;
+letter-spacing: 0%;
+text-align: center;
+  }
+
+  .footer__navigation-list-bottom li::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background-color: rgb(166, 166, 168);
+    transform: translateX(1px);
+  }
+
+  .footer__navigation-list-bottom li:last-child::before {
+    display: none;
+  }
+
+  .burger-menu {
+    display: none; /* скрывать по умолчанию */
+  }
+
+
+
+  
+@media (max-width: 1120px) {
+    @media (max-width: 1120px) {
+        .header {
+            padding: 8px 0;
+        }
+        
+        .header__navigation {
+            display: none;
+        }
+        .header__buttons {
+            display: none;
+        }
+        .header__search {
+            display: none;
+        }
+        .header__logo {
+            margin-right: 0;
+        }
+        .header__right {
+            display: flex;
+            justify-content: flex-end;
+            flex: 1;
+        }
+        .burger-menu {
+            display: block;
+            width: 30px;
+            height: 30px;
+            background-image: url('/burger.png');
+            background-size: 30px 30px;
+            background-position: center;
+            cursor: pointer;
+            margin-left: auto;
+            
+        }
+    }
+    
+}
+
+
+
+
+@media (max-width: 480px) {
+    .header {
+        padding: 4px 0; 
+    }
+    .header__logo {
+        width: 80px;
+    }
+    .burger-menu {
+        width: 20px;
+        height: 20px;
+    }
+}
