@@ -265,11 +265,7 @@ text-align: left;
 text-transform: uppercase;
 }
 
-.card_description-media {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+
 
 
 .card-right-one {
